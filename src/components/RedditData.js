@@ -30,7 +30,7 @@ const RedditData = ({ redditData }) => {
                                 </p>
                                 {selftext.length > truncatedText.length && (
                                     <i className='read_more' onClick={() => toggleText(i)}>
-                                        ... Read More
+                                        {isExpanded ? '... Read Less' : '... Read More'}
                                     </i>
                                 )}
                                 <h6 className='author'>Author: {author}</h6>
