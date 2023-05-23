@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+:root {
+  --color-232f3e: #232f3e;
+  --color-ffffff: #ffffff;
+  --color-bf4800: #bf4800;
+  --color-1565c9: #1565c9;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h5 {
+  color: var(--color-232f3e);
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.error {
+  color: var(--color-bf4800);
+}
+
+/* Header Start */
+
+#header {
+  background-color: var(--color-232f3e);
+}
+
+#header .navbar-light .navbar-nav .nav-link {
+  color: var(--color-ffffff);
+}
+
+#header .navbar-light .navbar-brand {
+  color: var(--color-ffffff);
+}
+
+/* Header Start */
+
+/* Footer Start */
+
+footer {
+  background-color: var(--color-232f3e);
+}
+footer:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Footer End */
+
+/* Home Page Start */
+.landging-img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loaded {
+  opacity: 1 !important;
+  transition: opacity 0.5s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+/* Home Page End */
+
+/* Reddit Seach Page Start */
+#reddit_search {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.btn-search {
+  background-color: var(--color-232f3e);
+  color: var(--color-ffffff);
+  font-size: 14px;
+  padding: 6px 27px;
+  border-radius: 10px;
+  border: 2px solid var(--color-232f3e);
+  margin: 15px 0;
+}
+
+.btn-search:hover {
+  background-color: var(--color-ffffff);
+  color: var(--color-232f3e);
+  border: 2px solid var(--color-232f3e);
+}
+
+.btn-details {
+  background-color: var(--color-1565c9);
+  color: var(--color-ffffff);
+  font-size: 14px;
+  padding: 4px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--color-1565c9);
+  margin: 15px 0;
+}
+
+.btn-details:hover {
+  background-color: var(--color-ffffff);
+  color: var(--color-1565c9);
+  border: 2px solid var(--color-1565c9);
+}
+
+.card_reddit {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 6px 0 rgba(0, 0, 0, .16), 0 2px 17px 0 rgba(0, 0, 0, .12);
+  transition: transform 1s ease;
+}
+
+.card_reddit:hover {
+  transform: translate(0px, -12px);
+}
+
+.read_more {
+  color: var(--color-1565c9);
+  cursor: pointer;
+}
+
+.author {
+  margin: 5px 0;
+}
+
+#reddit_data {
+  width: 100%;
+  padding-bottom: 50px;
+}
