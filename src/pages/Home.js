@@ -20,7 +20,7 @@ function Home() {
             qSearch: word
         }
         try{
-            const res = await axios.post('https://node-reddit-search-app-production.up.railway.app/', obj);
+            const res = await axios.post('https://node-reddit-search-app-production.up.railway.app', obj);
             setRedditData(res.data);
             setLoading(false);
             setError(false);
